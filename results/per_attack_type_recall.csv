@@ -1,0 +1,6 @@
+attack_type,n,iso_recall,ae_recall
+brute_force,79.0,0.9620253164556962,1.0
+credential_stuffing,50.0,1.0,1.0
+data_exfiltration,61.0,0.9836065573770492,1.0
+offhours_privileged_access,67.0,0.14925373134328357,0.8507462686567164
+port_scan,56.0,1.0,1.0

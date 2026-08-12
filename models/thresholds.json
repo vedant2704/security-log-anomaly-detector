@@ -1,0 +1,15 @@
+{
+  "isolation_forest": 0.013535714991348313,
+  "autoencoder": 0.30188637987408945,
+  "features": [
+    "login_attempts",
+    "login_success",
+    "distinct_usernames_from_ip_1h",
+    "session_duration_sec",
+    "bytes_out",
+    "bytes_in",
+    "distinct_dst_ports_1h",
+    "dst_port",
+    "hour_of_day"
+  ]
+}
