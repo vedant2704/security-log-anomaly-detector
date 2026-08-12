@@ -161,44 +161,5 @@ record.
 
 ---
 
-## Honest limitations (know these before an interviewer asks)
-
-- **Synthetic data**: patterns are cleaner than real-world noisy traffic.
-  Real deployment would need real (or at least real-distribution) traffic
-  to validate against, plus concept drift monitoring over time.
-- **Threshold selection**: thresholds are picked by maximizing F1 on the
-  test set — in production you'd tune this against business cost
-  (false-positive alert fatigue vs. missed-detection risk) and pick
-  thresholds on a separate validation set, not the test set.
-- **Autoencoder via scikit-learn**: functionally correct, but a
-  PyTorch/Keras version would allow deeper architectures, batch norm,
-  dropout, and GPU training — worth mentioning as the natural next step.
-- **No temporal/sequence modeling**: each session is scored independently.
-  A real SIEM pipeline would also model sequences of events per IP/user
-  over time (e.g. with an LSTM or a sliding-window feature set).
-
-Naming these unprompted in an interview signals maturity — it shows you
-understand the difference between "made something work" and "understand
-where it would break in production."
-
----
-
-## Resume bullet suggestions
-
-Pick 2–3, don't use all of them:
-
-- *Built an unsupervised anomaly detection system (Isolation Forest +
-  neural autoencoder) on synthetic security telemetry, achieving 0.97 F1
-  / 0.999 ROC-AUC on held-out data; identified that reconstruction-based
-  models outperform tree-based methods by 70pp recall on subtle,
-  multi-feature attack patterns.*
-- *Designed and generated a labeled synthetic dataset (10K+ records, 5
-  attack types) to train and evaluate anomaly detection models without
-  access to sensitive production security data.*
-- *Deployed anomaly detection models via a FastAPI backend with a live
-  monitoring dashboard, exposing real-time scoring endpoints and
-  per-attack-type performance breakdowns.*
-
----
 
 Built by Vedant Mahadik.
