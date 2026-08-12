@@ -8,8 +8,10 @@ dashboard.
 Built to apply ML to a domain I already have real investigative experience
 in (cybercrime log analysis / OSINT, Maharashtra Cyber internship) rather
 than a generic dataset — the goal was an end-to-end system, not a notebook.
+
+
 ![ThreatLens dashboard — live log stream, dual-model scoring, and model comparison stats](docs/dashboard-screenshot.png)
-![ThreatLens diagnostics — confusion matrices and ROC curve comparison](docs/dashboard-screenshot-2.png .png)
+![ThreatLens diagnostics — confusion matrices and ROC curve comparison](docs/dashboard-screenshot-2.png.png)
 ---
 
 ## Why this project
